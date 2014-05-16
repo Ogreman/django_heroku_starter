@@ -120,6 +120,7 @@ PROJECT_APPS = (
 
 THIRD_PARTY_APPS = (
     'unipath',
+    'raven.contrib.django.raven_compat',
 )
 
 INSTALLED_APPS = BASE_APPS + PROJECT_APPS + THIRD_PARTY_APPS
