@@ -1,5 +1,5 @@
 # Django settings for dj_starter project.
-
+import os
 from unipath import Path
 
 BASE_DIR = Path(__file__).ancestor(3)
@@ -72,7 +72,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'vw^hx*v9ei)oo%(psc##o@l7r97qqvvuldwk2gnv)g^^f2)@j7'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
